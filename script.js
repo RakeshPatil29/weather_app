@@ -21,17 +21,17 @@ const getFacts = async (city) => {
     showTemp.innerHTML = Math.round(data.main.temp) + " " +"ºC";
 
     if (data.weather[0].main == "Clouds") {
-        weatherIcon.src = "../static/clouds.png";
+        weatherIcon.src = "/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-        weatherIcon.src = "../static/sun.png";
+        weatherIcon.src = "/sun.png";
     } else if (data.weather[0].main == "Rain") {
-        weatherIcon.src = "../static/rain.png"
+        weatherIcon.src = "/rain.png"
     } else if (data.weather[0].main == "Drizzle") {
-        weatherIcon.src = "../static/drizzle.png"
+        weatherIcon.src = "/drizzle.png"
     } else if (data.weather[0].main == "Mist") {
-        weatherIcon.src = "../static/mist.png";
+        weatherIcon.src = "/mist.png";
     } else if (data.weather[0].main == "Snow") {
-        weatherIcon.src = "../static/snow.png";
+        weatherIcon.src = "/snow.png";
     }
 
     showTemp.style.fontSize = "x-large";
