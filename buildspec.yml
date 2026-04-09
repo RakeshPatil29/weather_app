@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - echo Build started
-      - python main.py || echo "No main.py file"
+      - python index.html || echo "No main.py file"
 
   post_build:
     commands:
